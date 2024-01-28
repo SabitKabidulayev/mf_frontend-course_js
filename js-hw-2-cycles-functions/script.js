@@ -1,5 +1,5 @@
 // TASK 1
-console.log("TASK1")
+console.log("-----------------TASK_1-----------------")
 
 let country = "Sweden";
 let access = (country === "Sweden") ? true : false;
@@ -7,7 +7,7 @@ let access = (country === "Sweden") ? true : false;
 console.log(access)
 
 // TASK 2
-console.log("TASK2")
+console.log("-----------------TASK_2-----------------")
 
 let a = 10;
 for (i2 = 0; i2 < 10; i2++) {
@@ -16,29 +16,26 @@ for (i2 = 0; i2 < 10; i2++) {
 console.log(a)
 
 // TASK 3
-console.log("TASK3")
+console.log("-----------------TASK_3-----------------")
 
 for (i3 = 0; i3 < 10; i3 += 2) {
     userNum = prompt("Введите число")
     if (isNaN(userNum)) {
         alert(`${String(userNum)} не является числом`)
-        location.reload()
     }
     userNum = +userNum
     userNum === 10 ? console.log("Равно 10") : console.log("Не равно 10")
 }
 
 // TASK 4
-console.log("TASK4")
+console.log("-----------------TASK_4-----------------")
 
 let counter = prompt("Введите количество квадратов чисел от 0 до 100, которое вы хотите вывести в консоль")
 if (isNaN(counter)) {
     alert(`${String(counter)} не является числом`)
-    location.reload()
 }
 if (counter < 0 || counter > 10) {
     alert("Введите число от 0 до 10 включительно")
-    location.reload()
 }
 
 counter = +counter
@@ -48,7 +45,7 @@ for (i4 = 0; i4 < counter; i4++) {
 }
 
 // TASK 5
-console.log("TASK5")
+console.log("-----------------TASK_5-----------------")
 
 for (i5 = 1; i5 < 101; i5++) {
     if (i5 % 3 === 0 && i5 % 5 === 0) {
@@ -72,7 +69,7 @@ while (i6 < 3) {
 }
 
 // TASK 7
-console.log("TASK7")
+console.log("-----------------TASK_7-----------------")
 
 function getSquares (min, max) {
     for (i = min; i <= max; i++) {
@@ -98,7 +95,7 @@ function getRandomColor() {
 document.body.style.backgroundColor = getRandomColor()
 
 // TASK 9
-console.log("TASK9")
+console.log("-----------------TASK_9-----------------")
 
 function isInt(num) {
     return num % 1 === 0
@@ -117,7 +114,7 @@ function intOrDec(n) {
 intOrDec(10)
 
 // TASK 10
-console.log("TASK10")
+console.log("-----------------TASK_10-----------------")
 
 function calcPrice (days) {
     const perDay = 40
