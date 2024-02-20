@@ -1,13 +1,17 @@
 const body = document.querySelector('body')
 const pics = document.querySelectorAll('#pic')
 
-let currentBackgorund = ''
+let bg = {
+    index: 0,
+    url: `url(${getBg(pics[0])})`
+}
 
-if (localStorage.currentBackgorund) {
-    currentBackgorund = localStorage.currentBackgorund
+if (localStorage.bg) {
+    bg = JSON.parse(localStorage.bg);
 } 
 
-body.style.backgroundImage = currentBackgorund
+body.style.backgroundImage = bg.url
+pics[bg.index].classList.add('selected')
 
 pics.forEach((pic, i) => {
     pics[i].addEventListener('click', () => {
@@ -16,7 +20,9 @@ pics.forEach((pic, i) => {
         }
         body.style.backgroundImage = `url(${getBg(pics[i])})`
         pics[i].classList.add('selected')
-        localStorage.currentBackgorund = `url(${getBg(pics[i])})`
+        bg.index = i
+        bg.url = `url(${getBg(pics[i])})`
+        localStorage.bg = JSON.stringify(bg)
     })
 })
 
