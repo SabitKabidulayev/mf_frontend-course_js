@@ -6,17 +6,17 @@ setInterval(timeNow, 1000)
 function timeNow () {
     const now = new Date()
     
-    let currentHours = now.getHours()
+    const currentHours = now.getHours()
     if (currentHours < 10) {
         currentHours = '0' + currentHours
     } 
     
-    let currentMinutes = now.getMinutes()
+    const currentMinutes = now.getMinutes()
     if (currentMinutes < 10) {
         currentMinutes = '0' + currentMinutes
     } 
 
-    let currentSeconds = now.getSeconds()
+    const currentSeconds = now.getSeconds()
     if (currentSeconds < 10) {
         currentSeconds = '0' + currentSeconds
     } 
