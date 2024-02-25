@@ -6,5 +6,5 @@ const numberLogInterval = setInterval(function() {
         clearInterval(numberLogInterval)
         return
     }
-    console.log(`Message No${number}`)  
+    console.log(`Message No.${number}`)  
 }, 2000)
