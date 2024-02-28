@@ -1,0 +1,38 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.widget{
+    max-width: 1000px;
+    border: 2px solid rgb(73, 156, 233); 
+}
+
+.current {
+    padding: 20px;
+    color: white;
+    background-color: rgb(73, 156, 233);
+}
+
+.forecast-div {
+    border-bottom: 2px solid rgb(73, 156, 233); 
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.city, .date, .time, .weather, .temp, .wind {
+    margin-bottom: 5px;
+}
+
+.weather, .temp, .wind {
+    text-align: center;
+}
+
+.icon {
+    display: block;
+    margin: 0 auto;
+}
+
