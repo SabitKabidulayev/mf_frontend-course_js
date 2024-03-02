@@ -21,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    background-color: rgba(114, 157, 170, 0.404);
 }
 
 .city, .date, .time, .weather, .temp, .wind {
