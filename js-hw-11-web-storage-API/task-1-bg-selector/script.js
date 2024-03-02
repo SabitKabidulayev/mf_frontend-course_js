@@ -8,6 +8,7 @@ let bg = {
 
 if (localStorage.bg) {
     bg = JSON.parse(localStorage.bg);
+    console.log(bg)
 } 
 
 body.style.backgroundImage = bg.url
