@@ -29,11 +29,6 @@ function square(a) {
 }
   
 square(10) // 100
-  
-square()
-
-
-
 
 console.log("---------------TASK_3----------------")
 
